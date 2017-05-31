@@ -61,6 +61,10 @@ You can view the rendered map from that query in the small file
 in the `uni-task-2` repository, showing that many islands of Indonesia
 do not have an island object that is connected to Wikimedia projects.
 
+The above query only includes the outermost OSM objects.
+To see all inner nodes and their attributes, change the `>` to `>>` to
+[recursively descend](http://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL#Recurse_down_relations_.28.3E.3E.29)
+
 The repository also has the query and geojson for ways that are islands, and
 are connected to Wikimedia projects.
 
