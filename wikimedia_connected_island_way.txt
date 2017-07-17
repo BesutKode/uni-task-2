@@ -1,15 +1,13 @@
-area[name="Indonesia"];
-(
-  way
-    [place=island]
-    [name]
-    [wikipedia]
-    (area);
-  way
-    [place=island]
-    [name]
-    [wikidata]
-    (area);
- );
-(>;);
-out body;
+( area[name="Indonesia"]; )->.indonesia;
+way[place="island"]["wikidata"](area.indonesia);
+(._;>>;);
+out;
+way[place="islet"]["wikidata"](area.indonesia);
+(._;>>;);
+out;
+way[place="island"]["wikipedia"](area.indonesia);
+(._;>>;);
+out;
+way[place="islet"]["wikipedia"](area.indonesia);
+(._;>>;);
+out;
